@@ -10,7 +10,7 @@ OLIVE: **O**rder **L**eading **I**ncremental **Ve**rification
 ------
 
 
-#### OLIVE is an abstract execution tool for deep neural networks verification. Olive can accelerate the verification of a new neural network N* by leveraging existing verification results (templates) from a similar network N_0. 
+#### OLIVE is an abstract execution tool for deep neural networks verification. Olive can accelerate the verification of a new neural network $`N^*`$ by leveraging existing verification results (templates) from a similar network $`N_0`$. 
 
 
 
@@ -26,14 +26,14 @@ OLIVE: **O**rder **L**eading **I**ncremental **Ve**rification
 
 <img src="https://i.postimg.cc/m2kq66nM/IVAN4.png" alt="incremental" width="450"/>
 
-**Olive** can accelerate the verification of a new neural network N* by leveraging existing verification results (templates) from a similar network ```N_0```. Branch and Bound technique first verifies an original network ```N_0``` through AppVerifier to generate templates T, then uses the templates to speed up the verification process when checking a modified network N*, achieving faster verification while maintaining correctness.
+**Olive** can accelerate the verification of a new neural network $`N^*`$ by leveraging existing verification results (templates) from a similar network $`N_0`$. Branch and Bound technique first verifies an original network $`N_0`$ through AppVerifier to generate templates T, then uses the templates to speed up the verification process when checking a modified network N*, achieving faster verification while maintaining correctness.
 
 -------
 
 #### Key features of Olive:
 1. Addresses a gap in current approaches: While existing methods focus on identifying whether each sub-problem should be reassessed, Olive introduces a novel prioritization strategy based on how necessary each reassessment is.
-2. Eager to Falsification-Driven exploration: The approach explores sub-problems of verifying N* based on N0, which rechecks the most suspicious historical sub-problems first.
-3. **Olive** reuses information across different subtrees of the template (represented previous verification subproblem space). Rather than treating each subtree independently, as in verification from scratch, Olive leverages insights and refinements from templates, which reduces redundant exploration with similar subproblems. Olive achieves greater efficiency in robustness verification. 
+2. Eager to Falsification-Driven exploration: The approach explores sub-problems of verifying $`N^*`$ based on $`N_0`$, which rechecks the most suspicious historical sub-problems first.
+3. **Olive** reuses information across different subtrees of the template (represented previous verification subproblem space). Rather than treating each subtree independently, as in verification from scratch,  **Olive** leverages insights and refinements from templates, which reduces redundant exploration with similar subproblems. Olive achieves greater efficiency in robustness verification. 
 
 
 
@@ -43,5 +43,4 @@ OLIVE: **O**rder **L**eading **I**ncremental **Ve**rification
 
 Licensed under the [Apache License](https://www.apache.org/licenses/LICENSE-2.0)
 - Our implementation is built on top of 
-    - [ERAN] https://github.com/eth-sri/eran
     - [IVAN] https://github.com/uiuc-arc/Incremental-DNN-Verification 
