@@ -4,7 +4,6 @@ OLIVE: **O**rder **L**eading **I**ncremental **Ve**rification
 
 [This aims to provide supplementary materials for the paper (OOPSLA2025) titled:"Efficient Incremental Verification of Neural Networks Guided by Counterexample Potentiality" with more details and discussion, which could be fully included in the original submission due to the page limits. ]
 
-（Implementation is ready soon, please stay tuned!)
 
 
 ------
